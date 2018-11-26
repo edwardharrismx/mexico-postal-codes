@@ -1,0 +1,21 @@
+This work is licensed under a Creative Commons Attribution 3.0 License.
+This means you can use the dump as long as you give credit to geonames (a link on your website to www.geonames.org is ok)
+see http://creativecommons.org/licenses/by/3.0/
+
+This readme describes the GeoNames Postal Code dataset.
+The main GeoNames gazetteer data extract is here: http://download.geonames.org/export/dump/
+
+The data format is in utf8 encoding, with the following fields :
+
+country code      : iso country code, 2 characters
+postal code       : varchar(20)
+place name        : varchar(180)
+admin name1       : 1. order subdivision (state) varchar(100)
+admin code1       : 1. order subdivision (state) varchar(20)
+admin name2       : 2. order subdivision (county/province) varchar(100)
+admin code2       : 2. order subdivision (county/province) varchar(20)
+admin name3       : 3. order subdivision (community) varchar(100)
+admin code3       : 3. order subdivision (community) varchar(20)
+latitude          : estimated latitude (wgs84)
+longitude         : estimated longitude (wgs84)
+accuracy          : accuracy of lat/lng from 1=estimated to 6=centroid
